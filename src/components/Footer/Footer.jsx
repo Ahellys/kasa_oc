@@ -1,7 +1,7 @@
 function Footer(){
     return(
         <footer>
-            <p>Des infos tmtcbb</p>
+            <p> infos légales et logo sur fond noir</p>
         </footer>);
 }
 
