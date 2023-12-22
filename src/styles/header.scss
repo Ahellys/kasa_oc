@@ -1,0 +1,13 @@
+header{
+    display: flex;
+    margin: 2rem 4rem;
+    height: 20%;
+    justify-content: space-between;
+    align-items: center;
+    nav{
+        a{
+            font-size: 2rem;
+            margin-left: 5rem;
+        }
+    }
+}

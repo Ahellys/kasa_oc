@@ -1,22 +1,21 @@
-import Banner from "../../components/Banner/Banner";
 //import { Link } from "react-router-dom";
 import Card from "../../components/PageContent/LodgingCard";
 import lodgements from "../../assets/logements.json";
+import '../../styles/home.scss';
 
 
 function Home() {
   const listLodgements = lodgements.map(lodgement =>
-  <li key={lodgement.id}>
+  <div className="card" key={lodgement.id} >
     <Card title={lodgement.title}
           cover={lodgement.cover}
           id={lodgement.id}
     />    
-  </li>
+  </div>
 
     );
   return (
-    <div >
-      <Banner />
+    <div className="cardGallery" >
       {listLodgements}
     </div>
   );

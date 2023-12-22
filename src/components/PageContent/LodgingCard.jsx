@@ -1,10 +1,12 @@
+
 function Card(props){
-    const { title, cover}= props
+    const {title}= props;
     return(
-        <div>
-            <img src={cover} alt="interieur d'un logement"/>
-            <p>{title}</p>
-        </div>
+        
+            <a href="#">
+                <p>{title}</p>
+            </a>
+        
     )
 }
 

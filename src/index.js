@@ -7,6 +7,7 @@ import Home from './pages/Home/home';
 import Lodging from './pages/Lodgings/lodgingPage';
 import About from './pages/About/about';
 import NotFound from './pages/NotFound/notFound';
+import './styles/index.scss';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

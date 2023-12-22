@@ -1,7 +1,11 @@
+import '../../styles/footer.scss';
+import logo_white from '../../assets/images/LOGO_white.png';
+
 function Footer(){
     return(
         <footer>
-            <p> infos légales et logo sur fond noir</p>
+            <img src={logo_white} alt='logo KASA en blanc' />
+            <p>2020 Kasa. All rights reserved</p>
         </footer>);
 }
 
