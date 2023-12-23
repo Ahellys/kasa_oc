@@ -1,18 +1,16 @@
-//import { Link } from "react-router-dom";
-import Card from "../../components/PageContent/LodgingCard";
+import { Link } from "react-router-dom";
 import lodgements from "../../assets/logements.json";
 import '../../styles/home.scss';
 
 
-function Home() {
-  const listLodgements = lodgements.map(lodgement =>
-  <div className="card" key={lodgement.id} >
-    <Card title={lodgement.title}
-          cover={lodgement.cover}
-          id={lodgement.id}
-    />    
-  </div>
+function Home({setActive}) {
 
+  const listLodgements = lodgements.map(lodgement =>
+        <div className="card" key={lodgement.id} onClick={()=>setActive(lodgement.id)}>
+                  <Link to='/pages/Lodgings'>
+                      <p>{lodgement.title}</p>
+                  </Link>  
+        </div>
     );
   return (
     <div className="cardGallery" >

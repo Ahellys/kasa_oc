@@ -1,12 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router} from 'react-router-dom'
+import App from './App';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import Home from './pages/Home/home';
-import Lodging from './pages/Lodgings/lodgingPage';
-import About from './pages/About/about';
-import NotFound from './pages/NotFound/notFound';
 import './styles/index.scss';
 
 
@@ -15,12 +12,7 @@ root.render(
   <React.StrictMode>
     <Router>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/pages/Lodging" element={<Lodging />} />
-        <Route exact path="/pages/About" element={<About />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <App />
       <Footer />
     </Router>
   </React.StrictMode>

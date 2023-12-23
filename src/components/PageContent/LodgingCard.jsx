@@ -1,12 +1,11 @@
+import { Link } from "react-router-dom";
 
 function Card(props){
     const {title}= props;
-    return(
-        
-            <a href="#">
+    return(   
+            <Link to='/pages/Lodgings'>
                 <p>{title}</p>
-            </a>
-        
+            </Link>  
     )
 }
 

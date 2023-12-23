@@ -1,17 +1,13 @@
-import Banner from "../../components/Banner/Banner";
+import LodgingDetails from "../../components/PageContent/LodgingDetail";
+import LodgingBanner from "../../components/Banner/LodgingBanner";
 
-function Lodging() {
+
+function Lodging({activeLodgement, setActive}) {
+    const id = activeLodgement;
     return (
       <div >
-        <Banner />
-        <ul>
-            <li>Name</li>
-            <li>Tags</li>
-            <li>Owner</li>
-            <li>Score</li>
-            <li>Collapses 1</li>
-            <li>Collapses 2</li>
-        </ul>
+        <LodgingBanner id={id}/>
+        <LodgingDetails id={id}/>
       </div>
     );
   }
