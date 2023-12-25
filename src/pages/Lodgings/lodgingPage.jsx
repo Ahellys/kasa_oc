@@ -1,15 +1,14 @@
 import LodgingDetails from "../../components/PageContent/LodgingDetail";
-import LodgingBanner from "../../components/Banner/LodgingBanner";
+import { Navigate } from "react-router";
 
 
 function Lodging({activeLodgement, setActive}) {
     const id = activeLodgement;
-    return (
-      <div >
-        <LodgingBanner id={id}/>
+      return ( id===undefined? <Navigate to="*"/> :
+      <div className="page">
         <LodgingDetails id={id}/>
       </div>
-    );
+    )
   }
   
   export default Lodging;

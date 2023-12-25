@@ -4,14 +4,14 @@ $mainColor:#FF6060;
 .cardGallery{
   display: flex;
   flex-wrap: wrap;
+  overflow: scroll;
   grid-gap: 2rem;
-  height: 50%;
+  height: auto;
   justify-content: center;
   margin : 2rem 4rem;
   padding : 4rem;
   border-radius: 25px;
   background-color: rgb(243, 239, 239);
-  overflow-y: scroll;
 
   .card{
     height: 14rem;

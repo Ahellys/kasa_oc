@@ -1,7 +1,8 @@
-function Banner() {
+function Banner({img, text}) {
     return (
       <div >
-        Some huge banner taking the whole screen
+        <img src={img} alt='paysage'/>
+        <p>{text}</p>
       </div>
     );
   }
