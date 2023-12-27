@@ -3,7 +3,6 @@ import "../../styles/collapse.scss"
 
 function Collapse({id,title,content}){
     const [isOpen, setOpen]= useState(false);
-    console.log(content);
     const toggle = () => {
         setOpen(!isOpen);
     };
