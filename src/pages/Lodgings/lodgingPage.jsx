@@ -1,11 +1,12 @@
 import LodgingDetails from "../../components/PageContent/LodgingDetail";
-import { Navigate } from "react-router";
+import { Navigate, useParams } from "react-router";
+import '../../styles/lodgements.scss';
 
 
-function Lodging({activeLodgement, setActive}) {
-    const id = activeLodgement;
+function Lodging() {
+    const id = useParams().id;
       return ( id===undefined? <Navigate to="*"/> :
-      <div className="page">
+      <div className="lodgement page">
         <LodgingDetails id={id}/>
       </div>
     )

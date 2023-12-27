@@ -1,7 +1,6 @@
 import logo from '../../assets/images/LOGO.jpg'
 import { Link } from 'react-router-dom';
 import NavBar from "./Nav";
-import '../../styles/header.scss';
 
 function Header(){
     return(

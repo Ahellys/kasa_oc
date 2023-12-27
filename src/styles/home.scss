@@ -1,36 +1,52 @@
-$cardwith: 15rem;
 $mainColor:#FF6060;
+
 
 .cardGallery{
   display: flex;
   flex-wrap: wrap;
-  overflow: scroll;
   grid-gap: 2rem;
   height: auto;
-  justify-content: center;
-  margin : 2rem 4rem;
+  
+  margin : 2rem 0;
   padding : 4rem;
   border-radius: 25px;
   background-color: rgb(243, 239, 239);
-
   .card{
     height: 14rem;
     width: 30%;
     position: relative;
-    background-color: $mainColor;
-    border-radius: 25px;
+    
       a{
         display:block;
         height: 100%;
         width: 100%;
+        border-radius: 25px;
         p{
           position: absolute;
           bottom: 5px;
           left: 5px;
           color: white;
         }
+        img{
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+          border-radius: 25px;
+          position: relative;
+          filter:brightness(65%)
+        }
       }
-
+    }
+    @media (max-width: 800px){
+      padding:0;
+      .card {
+        height: auto;
+        width:100%;
+        p{
+          font-size: 2rem;
+          width: 50%;
+        }
+      }
   }  
 }
 

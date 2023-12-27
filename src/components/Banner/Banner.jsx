@@ -1,6 +1,6 @@
 function Banner({img, text}) {
     return (
-      <div >
+      <div className="banner">
         <img src={img} alt='paysage'/>
         <p>{text}</p>
       </div>

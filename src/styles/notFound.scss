@@ -1,0 +1,19 @@
+.notFound{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 4rem 4rem;
+    a{
+        text-decoration: underline ;
+    }
+    .notFound__code{
+        font-weight: bold;
+        font-size: 15rem;
+        
+    }
+    p{
+        font-size: 2rem;
+    }
+}
+

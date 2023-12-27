@@ -1,0 +1,92 @@
+.carrousel{
+    position: relative;
+    width:100%;
+    height: 500px;
+    color: white;
+    img{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #previousImage,#nextImage{
+        font-weight: bolder;
+        position: absolute;
+        bottom: 40%;
+        font-size: 100px;
+        z-index: 1;
+        cursor: pointer;
+    }
+    #previousImage{
+        left: 15px;
+    }
+    #nextImage{
+        right: 15px;
+    }
+    #activeImage{
+        font-weight: bolder;
+        position: absolute;
+        bottom: 5%;
+        left: 48%;
+        font-size: 25px;
+        z-index: 1; 
+        cursor:default;
+    }
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    &.intro{
+        margin-top: 1rem;
+        height: auto;
+        img{
+            border-radius: 60px;
+            width: 30%;
+        }
+        .host{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+    &.quickLook{
+        .tags{
+            display: flex;
+            p{
+                margin:0 0.5rem 0 0;
+                background-color: #FF6060;
+                color: white;
+                border-radius: 25px;
+                padding: 5px 20px;
+            }
+        }
+        .fa-star{
+            font-size: 2rem;
+            padding-right: 10px;
+            color: grey;
+            &.checked{
+                color: #FF6060;
+            }
+        }
+    }
+    &.detail{
+        display: flex;
+        justify-content: space-between;
+        .collapseElement{
+            margin: 2rem 0 0;
+            width: 40%;
+        }
+        @media (max-width: 800px){
+            flex-direction: column;
+            width: 100%;
+            .collapseElement{
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+
