@@ -1,0 +1,36 @@
+.carrousel{
+    position: relative;
+    width:100%;
+    height: 500px;
+    color: white;
+    img{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+    #previousImage,#nextImage{
+        font-weight: bolder;
+        position: absolute;
+        bottom: 40%;
+        font-size: 100px;
+        z-index: 1;
+        cursor: pointer;
+    }
+    #previousImage{
+        left: 15px;
+    }
+    #nextImage{
+        right: 15px;
+    }
+    #activeImage{
+        font-weight: bolder;
+        position: absolute;
+        bottom: 5%;
+        left: 48%;
+        font-size: 25px;
+        z-index: 1; 
+        cursor:default;
+    }
+}

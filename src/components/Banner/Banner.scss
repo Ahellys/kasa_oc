@@ -1,0 +1,30 @@
+.banner{
+    display: flex;
+    position: relative;
+    height: 15rem;
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+        position: relative;
+        filter:brightness(65%);
+      }
+    p{
+      position: absolute;
+      color: white;
+      margin:0;
+      font-size: 4rem;
+      font-weight: bold;
+      top: calc(50% - 40px);
+      left: 0%;
+      text-align: center;
+      width:100%;
+    }
+    @media (max-width: 800px) {
+        p{
+            text-align: start;
+            top: calc(50% - 80px);
+        }   
+    }
+  }

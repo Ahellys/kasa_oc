@@ -12,7 +12,7 @@ $mainColor:#FF6060;
   border-radius: 25px;
   background-color: rgb(243, 239, 239);
   .card{
-    height: 14rem;
+    height: 25rem;
     width: 30%;
     position: relative;
     
@@ -21,20 +21,22 @@ $mainColor:#FF6060;
         height: 100%;
         width: 100%;
         border-radius: 25px;
+        background: linear-gradient(#F6F6F6 30%, black 70%);
         p{
           position: absolute;
+          width: 60%;
           bottom: 5px;
           left: 5px;
           color: white;
         }
-        img{
-          object-fit: cover;
-          width: 100%;
-          height: 100%;
-          border-radius: 25px;
-          position: relative;
-          filter:brightness(65%)
-        }
+      }
+      img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+        border-radius: 25px;
+        opacity: 0.7;
       }
     }
     @media (max-width: 800px){
@@ -53,12 +55,7 @@ $mainColor:#FF6060;
 
 
 
-img{
-  max-height: 100%;
-  max-width: 100%;
-  object-fit: cover;
-  position: relative;
-}
+
     
 
         

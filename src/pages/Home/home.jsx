@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
 import Banner from "../../components/Banner/Banner"
 import lodgements from "../../assets/logements.json";
-import '../../styles/home.scss';
 import banner from "../../assets/images/banner_main.svg"
-
+import './home.scss';
 
 function Home() {
   const bannerText ="Chez vous, partout et ailleurs";

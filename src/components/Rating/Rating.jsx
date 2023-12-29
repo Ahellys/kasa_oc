@@ -1,3 +1,5 @@
+import "./Rating.scss";
+
 function Rating({score}){
 const rating = [1, 2, 3, 4, 5]; // array contenant la position des étoiles
 let key=0;

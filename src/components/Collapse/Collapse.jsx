@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../../styles/collapse.scss"
+import "./collapse.scss"
 
 function Collapse({id,title,content}){
     const [isOpen, setOpen]= useState(false); // State de l'élément, ouvert ou fermé
@@ -14,10 +14,10 @@ function Collapse({id,title,content}){
     return(
         <div className="collapseElement">
             <h2 className="collapseTitle">{title} 
-                <span id={"arrow"+id} className="arrow" onClick={(e) => { // on click, écoute l'évènement pour déclencher les animations et ouvrir la collapse
+                <i className="fa fa-solid fa-chevron-up arrow" id={"arrow"+id} onClick={(e) => { // on click, écoute l'évènement pour déclencher les animations et ouvrir la collapse
                     toggle();
                     document.getElementById(e.target.id).classList.toggle("open");
-                    }} aria-hidden="true">^</span>
+                    }} aria-hidden="true"></i>
             </h2>
             <p aria-hidden={isOpen?"true":"false"} className={isOpen?"collapseContent open":"collapseContent"}>{contentDetail}</p>
         </div>

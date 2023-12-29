@@ -1,7 +1,8 @@
 import Banner from "../../components/Banner/Banner";
-import Collapse from "../../components/PageContent/Collapse";
+import Collapse from "../../components/Collapse/Collapse";
 import banner from "../../assets/images/banner_about.svg";
 import aboutArray from "../../assets/about.json";
+import './about.scss';
 
 function About() {
 const aboutInfos = aboutArray.map(about => // l'id est utilisé comme clé pour la fonction map et comme id pour cibler les éléments HTML

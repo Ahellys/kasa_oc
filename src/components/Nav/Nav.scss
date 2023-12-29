@@ -1,0 +1,23 @@
+nav{
+    display: flex;
+    a{
+        font-size: 2rem;
+        margin-left: 5rem;
+        &:focus {
+            text-decoration: underline;
+        }
+        &:hover{
+            text-decoration: underline; 
+        }
+    }
+
+}
+@media (max-width: 800px) {
+    nav{
+        padding: 0;
+        a{
+            margin-left: 1rem;
+        }
+    }
+
+}

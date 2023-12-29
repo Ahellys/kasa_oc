@@ -1,3 +1,5 @@
+import "./Tags.scss";
+
 function Tags({tagArray}){
     let key =0;
     const tags= tagArray.map(tag =>
@@ -5,7 +7,7 @@ function Tags({tagArray}){
     )
 
     return(
-        <div className="tags">
+        <div className="tags"> 
             {tags}
         </div>
         

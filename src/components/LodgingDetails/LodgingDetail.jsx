@@ -1,10 +1,11 @@
 import lodgementsArray from '../../assets/logements.json'
-import Carrousel from '../Banner/Carrousel';
-import Tags from './Tags';
-import Collapse from './Collapse';
+import Carrousel from '../Carrousel/Carrousel';
+import Tags from '../Tags/Tags';
+import Collapse from '../Collapse/Collapse';
 import { Navigate } from 'react-router';
-import Owner from './Owner';
-import Rating from './Rating';
+import Owner from '../OwnerInfo/Owner';
+import Rating from '../Rating/Rating';
+import "./Lodging.scss";
 
 function LodgingDetails({id}){
     if (id){ // vérification qu'il y a bien un ID

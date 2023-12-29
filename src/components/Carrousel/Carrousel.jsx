@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import "./Carrousel.scss";
 
 
 function Carrousel({lodgement}){

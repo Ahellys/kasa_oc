@@ -1,6 +1,5 @@
-import LodgingDetails from "../../components/PageContent/LodgingDetail";
+import LodgingDetails from "../../components/LodgingDetails/LodgingDetail";
 import { Navigate, useParams } from "react-router";
-import '../../styles/lodgements.scss';
 
 
 function Lodging() {

@@ -1,9 +1,10 @@
 import logo from '../../assets/images/LOGO.jpg'
 import { Link } from 'react-router-dom';
-import NavBar from "./Nav";
+import NavBar from "../Nav/Nav";
+import "./Header.scss";
 
 function Header(){
-    return(
+return(
     <header>
         <h1>
             <Link to="/">

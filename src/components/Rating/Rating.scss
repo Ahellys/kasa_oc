@@ -1,0 +1,8 @@
+.fa-star{
+    font-size: 2rem;
+    padding-right: 10px;
+    color: grey;
+    &.checked{
+        color: #FF6060;
+    }
+}
