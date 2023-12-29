@@ -4,10 +4,9 @@ import banner from "../../assets/images/banner_about.svg";
 import aboutArray from "../../assets/about.json";
 
 function About() {
-const aboutInfos = aboutArray.map(about =>
-  <li key={about.id}>
-    <Collapse id={about.id} title={about.title} content={about.content}/>
-  </li>)
+const aboutInfos = aboutArray.map(about => // l'id est utilisé comme clé pour la fonction map et comme id pour cibler les éléments HTML
+        <Collapse key={about.id}  id={about.id} title={about.title} content={about.content}/>
+    )
 
   return (
     <div className="about page">

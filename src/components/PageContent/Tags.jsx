@@ -1,7 +1,7 @@
 function Tags({tagArray}){
-    
+    let key =0;
     const tags= tagArray.map(tag =>
-    <p className="tag">{tag}</p>
+    <p key={key++} className="tag">{tag}</p>
     )
 
     return(

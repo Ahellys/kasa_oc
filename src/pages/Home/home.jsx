@@ -7,7 +7,7 @@ import banner from "../../assets/images/banner_main.svg"
 
 function Home() {
   const bannerText ="Chez vous, partout et ailleurs";
-  const listLodgements = lodgements.map(lodgement =>
+  const listLodgements = lodgements.map(lodgement => //id passé en paramètre pour créer une route unique vers chaque logement
         <div className="card" key={lodgement.id}>
             <Link to={'/pages/Lodgings/'+lodgement.id} >
                 <img src={lodgement.cover} alt='appartement' />

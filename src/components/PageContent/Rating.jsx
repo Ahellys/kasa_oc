@@ -1,12 +1,13 @@
 function Rating({score}){
-const rating = [1, 2, 3, 4, 5];
+const rating = [1, 2, 3, 4, 5]; // array contenant la position des étoiles
+let key=0;
 return (
     <div className="rating">
         {rating.map(rating => 
             (parseInt(score) >= rating)?(
-                <i class="fa fa-star checked"></i>
+                <i key={key++} className="fa fa-star checked"></i> //si la note du logement est supérieure ou égale à la position de l'étoile, étoile en couleur
             ) : (
-                <i class="fa fa-star"></i>
+                <i key={key++} className="fa fa-star"></i>
             )
             )
         }
