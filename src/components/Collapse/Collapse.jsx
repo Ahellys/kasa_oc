@@ -13,12 +13,13 @@ function Collapse({id,title,content}){
     
     return(
         <div className="collapseElement">
-            <h2 className="collapseTitle">{title} 
+            <div className="collapseTitle">
+                <p>{title}</p>
                 <i className="fa fa-solid fa-chevron-up arrow" id={"arrow"+id} onClick={(e) => { // on click, écoute l'évènement pour déclencher les animations et ouvrir la collapse
                     toggle();
                     document.getElementById(e.target.id).classList.toggle("open");
                     }} aria-hidden="true"></i>
-            </h2>
+            </div>
             <p aria-hidden={isOpen?"true":"false"} className={isOpen?"collapseContent open":"collapseContent"}>{contentDetail}</p>
         </div>
     );

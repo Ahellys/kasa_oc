@@ -1,10 +1,10 @@
 import "./Owner.scss"
 function Owner({name,photo}){
     return(
-        <span className="host">
-            {name}
+        <div className="host">
+            <p className="name">{name}</p>
             <img src={photo} alt="propriétaire" />
-        </span>
+        </div>
     )
 }
 

@@ -3,7 +3,7 @@
 .divInfos{
     display: flex;
     justify-content: space-between;
-    @media (max-width: 800px){
+    @media screen and (min-width: 320px) and (max-width: 700px){
         flex-direction: column;
     }
 }
@@ -16,22 +16,26 @@
         flex-direction: column;
         margin-top: 1rem;
         height: auto;
+        width: 70%;
         h2{
-            margin-bottom: 0.5rem;
+            font-size: 2.1rem;
         }
-        p{
-            margin-top: 0;
-            margin-bottom: 1rem;
+        @media screen and (min-width: 320px) and (max-width: 700px){
+            h2{
+                font-size: 1.2rem;
+                margin-top: 0;
+            }
         }
     }
     &.quickLook{
         margin-top: 2rem;
         display:flex;
         flex-direction: column;
-        @media (max-width: 800px){
+        @media screen and (min-width: 320px) and (max-width: 700px){
             margin-top:1rem;
             align-items: center;
             flex-direction: row-reverse;
+ 
         }
     }
     &.detail{
@@ -39,7 +43,7 @@
             margin: 0.5rem 0 0;
             width: 40%;
         }
-        @media (max-width: 800px){
+        @media screen and (min-width: 320px) and (max-width: 700px){
             flex-direction: column;
             width: 100%;
             .collapseElement{

@@ -16,10 +16,10 @@ function Carrousel({lodgement}){
             };
         return length>1?(        // Ne pas afficher les fleches ni le nombre d'images si seulement 1
             <div className="carrousel">
-                <span id="previousImage" onClick={prevImg}>{"<"}</span>
+                <i id="previousImage" onClick={prevImg} className="fa fa-solid fa-chevron-left"></i>
                 <img src={pictures[activeIndex]} alt="intérieur du logement"/>
                 <span id="activeImage">{activeIndex+1}/{length}</span>
-                <span id="nextImage" onClick={nextImg}>{">"}</span>
+                <i id="nextImage" onClick={nextImg} className="fa fa-solid fa-chevron-right"></i>
             </div>
         ):( 
             <div className="carrousel">

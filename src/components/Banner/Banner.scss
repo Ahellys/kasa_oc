@@ -2,6 +2,7 @@
     display: flex;
     position: relative;
     height: 15rem;
+    margin-bottom: 2rem;
     img{
         object-fit: cover;
         width: 100%;
@@ -14,17 +15,20 @@
       position: absolute;
       color: white;
       margin:0;
-      font-size: 4rem;
+      font-size: 3rem;
       font-weight: bold;
-      top: calc(50% - 40px);
+      bottom: calc(50% - 2rem);
       left: 0%;
       text-align: center;
       width:100%;
     }
-    @media (max-width: 800px) {
+    @media screen and (min-width: 320px) and (max-width: 700px) {
+        height: 7rem;
         p{
+            font-size: 1.4rem;
             text-align: start;
-            top: calc(50% - 80px);
+            top: calc(50% - 1.5rem);
+            left: 0.7rem;
         }   
     }
   }

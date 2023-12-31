@@ -1,8 +1,19 @@
-.fa-star{
-    font-size: 2rem;
-    padding-right: 10px;
-    color: grey;
-    &.checked{
-        color: #FF6060;
-    }
+.rating{
+    text-align: end;
+
+    .fa-star{
+        font-size: 2rem;
+        padding-right: 10px;
+        color: grey;
+        &.checked{
+            color: #FF6060;
+        }
+        @media screen and (min-width: 320px) and (max-width: 700px){
+        font-size: 1.1rem;   
+        }
+    } 
+    @media screen and (min-width: 320px) and (max-width: 700px){
+        width: 60%;
+        text-align: start;
+    }  
 }

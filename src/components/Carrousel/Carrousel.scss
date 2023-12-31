@@ -11,26 +11,33 @@
         border-radius: 25px;
     }
     #previousImage,#nextImage{
-        font-weight: bolder;
         position: absolute;
         bottom: 40%;
-        font-size: 100px;
+        font-size: 4rem;
         z-index: 1;
         cursor: pointer;
+        
     }
     #previousImage{
-        left: 15px;
+        left: 1rem;
     }
     #nextImage{
-        right: 15px;
+        right: 1rem;
     }
     #activeImage{
         font-weight: bolder;
         position: absolute;
         bottom: 5%;
         left: 48%;
-        font-size: 25px;
+        font-size: 1.5rem;
         z-index: 1; 
         cursor:default;
+    }
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+
+            height: 21rem;
+            #previousImage,#nextImage{
+                font-size: 1.5rem;
+            }
     }
 }
