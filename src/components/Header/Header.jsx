@@ -7,7 +7,7 @@ function Header(){
 return(
     <header>
         <h1>
-            <Link to="/">
+            <Link to="/kasa_oc/">
                 <img src={logo} alt="logo KASA" />
             </Link>
         </h1>

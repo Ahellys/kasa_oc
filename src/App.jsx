@@ -8,9 +8,9 @@ import NotFound from './pages/NotFound/notFound';
 function App(){
     return(
         <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/pages/Lodgings/:id" element={<Lodging />} />
-            <Route path="/pages/About" element={<About />} />
+            <Route path="/kasa_oc/" element={<Home />} />
+            <Route path="/kasa_oc/pages/Lodgings/:id" element={<Lodging />} />
+            <Route path="/kasa_oc/pages/About" element={<About />} />
             <Route path="*" element={<NotFound />} />
         </Routes>
     );

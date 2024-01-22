@@ -4,8 +4,8 @@ import "./Nav.scss";
 function NavBar(){
     return(
     <nav>
-        <Link  to="/">Accueil</Link>
-        <Link  to="pages/About">A propos</Link>
+        <Link  to="/kasa_oc/">Accueil</Link>
+        <Link  to="kasa_oc/pages/About">A propos</Link>
     </nav>);
 }
 
